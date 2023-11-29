@@ -16,7 +16,6 @@ struct MenuView: View {
         
         List(menuItems) { item in
             MenuListRow(item: item)
-          
         }
         .listStyle(.plain)
         .onAppear{
