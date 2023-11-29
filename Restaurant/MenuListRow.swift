@@ -26,5 +26,5 @@ struct MenuListRow: View {
 }
 
 #Preview {
-    MenuListRow(item: MenuItem(name: "Test", price: "3", imageName: "a"))
+    MenuListRow(item: MenuItem(name: "Test", price: "3", imageName: "onigiri"))
 }
