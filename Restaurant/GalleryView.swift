@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct GalleryView: View {
+    @State var images: [String] = [String]()
+    var data = DataService()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("Gallery").bold().font(.largeTitle).padding(.horizontal)
+            
+            GeometryReader { proxy in
+                ScrollView(showsIndicators: false) {
+                    LazyVGrid(columns: [GridItem(spacing: 0), GridItem(spacing: 0), GridItem(spacing: 0)], spacing: 0) {
+                        ForEach(images, id: \.self) { image in
+                            Image(image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(maxWidth: (proxy.size.width)/3)
+                                .clipped()
+                        }
+                    }
+                }
+            }
+        }.onAppear {
+            images = data.getGallery()
+        }
     }
 }
 
