@@ -17,6 +17,7 @@
 		06DA22462B1716C60039055B /* MenuListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA22432B1716C60039055B /* MenuListRow.swift */; };
 		06DA22472B1716C60039055B /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA22442B1716C60039055B /* MenuItem.swift */; };
 		06DA22482B1716C60039055B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA22452B1716C60039055B /* DataService.swift */; };
+		06DA224A2B1768B20039055B /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA22492B1768B20039055B /* PhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		06DA22432B1716C60039055B /* MenuListRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListRow.swift; sourceTree = "<group>"; };
 		06DA22442B1716C60039055B /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		06DA22452B1716C60039055B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		06DA22492B1768B20039055B /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				06DA22352B17156A0039055B /* Preview Content */,
 				06DA223D2B1716230039055B /* AboutView.swift */,
 				06DA223F2B1716370039055B /* GalleryView.swift */,
+				06DA22492B1768B20039055B /* PhotoView.swift */,
 				06DA22412B17164E0039055B /* MenuView.swift */,
 				06DA22452B1716C60039055B /* DataService.swift */,
 				06DA22442B1716C60039055B /* MenuItem.swift */,
@@ -158,6 +161,7 @@
 				06DA22472B1716C60039055B /* MenuItem.swift in Sources */,
 				06DA22422B17164E0039055B /* MenuView.swift in Sources */,
 				06DA22462B1716C60039055B /* MenuListRow.swift in Sources */,
+				06DA224A2B1768B20039055B /* PhotoView.swift in Sources */,
 				06DA22322B1715690039055B /* MainView.swift in Sources */,
 				06DA223E2B1716230039055B /* AboutView.swift in Sources */,
 				06DA22302B1715690039055B /* RestaurantApp.swift in Sources */,

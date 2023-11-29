@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct GalleryView: View {
+    
+    @State var sheetVisible: Bool = false
     @State var images: [String] = [String]()
+    @State var selectedImage: String = ""
     var data = DataService()
+    
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -24,6 +28,10 @@ struct GalleryView: View {
                                 .aspectRatio(contentMode: .fill)
                                 .frame(maxWidth: (proxy.size.width)/3)
                                 .clipped()
+                                .onTapGesture {
+                                    selectedImage = image
+                                    sheetVisible = true
+                                }
                         }
                     }
                 }
@@ -31,6 +39,9 @@ struct GalleryView: View {
         }.onAppear {
             images = data.getGallery()
         }
+        .sheet(isPresented: $sheetVisible, content: {
+            PhotoView(selectedImage: $selectedImage, sheetVisible: $sheetVisible)
+        })
     }
 }
 
